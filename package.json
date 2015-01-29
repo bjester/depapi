@@ -1,0 +1,28 @@
+{
+  "name": "depapi",
+  "title": "Depapi",
+  "description": "A Dependency API - Separate your script and style dependencies into a separate service with an API",
+  "version": "0.1.0",
+  "main": "index.js",
+  "homepage": "http://github.com/bjester/depapi",
+  "author": {
+    "name": "Blaine Jester",
+    "url": "http://blainejester.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjester/depapi.git"
+  },
+  "keywords": [
+    "resource injection",
+    "script dependency",
+    "api",
+    "require uglify"
+  ],
+  "dependencies": {
+    "browserify": "^8.1.1",
+    "deferred": "^0.7.2",
+    "hapi": "^8.1.0"
+  },
+  "devDependencies": {}
+}

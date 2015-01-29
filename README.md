@@ -1,5 +1,5 @@
 # depapi
-Dependency API - Separate your script and style dependencies into a separate service with an API
+A Dependency API - Separate your script and style dependencies into a separate service with an API
 
 ## Status: proposal
 
@@ -14,6 +14,7 @@ Posting to `/api/bundle`
 ```json
 {
   "environment": "dev",
+  "uglify": true,
   "entry_points": [
     {
       "path": "app/lib/util/util.js",
@@ -32,7 +33,12 @@ Will return
   "bundles": [
     {
       "path": "http://depapi.mydomain.com/resource/a0ab3aeca60d4a71f6f3377de1a3a931.js",
-      "map": "http://depapi.mydomain.com/resource/a0ab3aeca60d4a71f6f3377de1a3a931.js.map"
+      "map": "http://depapi.mydomain.com/resource/a0ab3aeca60d4a71f6f3377de1a3a931.js.map",
+      "contents": [
+        {
+          "path": "app/lib/util/util.js"
+        }
+      ],
     }
   ]
 }
