@@ -1,7 +1,7 @@
 {
   "name": "depapi",
   "title": "Depapi",
-  "description": "A Dependency API - Separate your script and style dependencies into a separate service with an API",
+  "description": "A Dependency API - Separate your script and style dependencies into a separate service",
   "version": "0.1.0",
   "main": "index.js",
   "homepage": "http://github.com/bjester/depapi",
@@ -21,8 +21,7 @@
   ],
   "dependencies": {
     "browserify": "^8.1.1",
-    "deferred": "^0.7.2",
-    "hapi": "^8.1.0"
+    "deferred": "^0.7.2"
   },
   "devDependencies": {}
 }
